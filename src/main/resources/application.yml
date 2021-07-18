@@ -1,0 +1,27 @@
+server:
+  port: 8081
+keycloak:
+  realm: harry
+  auth-server-url: http://192.168.148.132:8011/auth
+  resource: harry-keycloak
+  ssl-required: external
+  credentials:
+    secret: 6dbe83f7-872c-488c-8b03-c5ea608efa0a
+#  bearer-only: true
+  public-client: true
+  use-resource-role-mappings: false
+  cors: true
+#  security-constraints:
+#    - authRoles:
+#        - HARRY_CUSTOMER
+#      securityCollections:
+#        - name: customer
+#          patterns:
+#            - /harry/customer
+#    - authRoles:
+#        - HARRY_ADMIN
+#      securityCollections:
+#        - name: admin
+#          patterns:
+#            - /harry/admin
+
